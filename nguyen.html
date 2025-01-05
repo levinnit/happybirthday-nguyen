@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!-- Google Font for cursive -->
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://upload-os-bbs.hoyolab.com/upload/2021/02/21/1018493/127d0ce052b1c35d3200b3bb5be6efc4_6790541145403266732.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* Container for the birthday card */
+        .card-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Birthday letter styling */
+        .letter {
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            line-height: 1.5;
+            text-align: left;
+            margin: 20px;
+        }
+
+        /* Indentation for each paragraph */
+        .letter p {
+            text-indent: 30px;
+        }
+
+        .signature {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        /* Position for GIFs */
+        .gif {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            z-index: 10;
+        }
+
+        .fireworks {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 150px;
+            height: 150px;
+            z-index: 10;
+        }
+
+        .cat {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            z-index: 10;
+        }
+
+        /* Landscape Orientation */
+        @media screen and (orientation: landscape) {
+            body {
+                background-image: url('https://upload-os-bbs.hoyolab.com/upload/2021/02/21/1018493/127d0ce052b1c35d3200b3bb5be6efc4_6790541145403266732.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70');
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+
+        /* Portrait Orientation */
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url('https://upload-os-bbs.hoyolab.com/upload/2021/02/21/1018493/127d0ce052b1c35d3200b3bb5be6efc4_6790541145403266732.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70');
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- GIF in the upper-left corner -->
+    <img src="https://i.gifer.com/VZvx.gif" alt="Birthday GIF" class="gif">
+    
+    <!-- Fireworks GIF on the right -->
+    <img src="https://i.gifer.com/VZvx.gif" alt="Fireworks" class="fireworks">
+    
+    <!-- Cat GIF on the bottom-left side -->
+    <img src="https://i.gifer.com/1kLR.gif" alt="Cat GIF" class="cat">
+    
+    <div class="card-container">
+        <!-- Birthday Letter -->
+        <div class="letter">
+            <p>Dear Nguyen,</p>
+            <p>Your existence is something I didn’t expect, but one I’m deeply thankful for. I really appreciate your patience with this Ate’s mood swings haha, and I always enjoy our talks— watching BB and sharing cat reels plus de minus pts memes lol. I’m excited for more yapping and good times ahead. I also pray for your success as you continue your journey in Norway. Have an epic birthday celebration. God bless and I’m wishing you an amazing day and even a better year, my good vinoy friend!</p>
+            <div class="signature">– Jenie & Luna 🙂</div>
+        </div>
+    </div>
+</body>
+</html>
